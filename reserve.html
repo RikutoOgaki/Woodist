@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/reserve.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>Reserve</title>
+</head>
+<body>
+    <header>
+        <div class="box">
+            <ul class="base">
+                <li><a href="temp.html"><img src="images/logo.png" alt="logo" width="100px"></a></li>
+                <li><a href="">Menu</a>
+                    <ul class="indent">
+                        <li><a href="menu.html">Favorite Menu</a></li>
+                        <li><a href="menu02.html">Food Menu</a></li>
+                        <li><a href="menu03.html">Drink Menu</a></li>
+                        <li><a href="menu04.html">Course Menu</a></li>
+                    </ul>
+                </li>
+                <li><a href="access.html">Access</a></li>
+                <li><a href="reserve.html">Reserve</a></li>
+            </ul>
+        </div>
+    </header>
+    <h2 class="mainImg"><img src="images/reserve main.jpg" alt=""></h2>
+    <div class="text">
+        <h3>予約時の注意</h3>
+            <p class="tee">・全ての欄をお忘れなく記入してください。<br>
+                ・間違ったお客様情報を記入しないでください。<br>
+                ・こちらでお客様の情報を悪用したり、流出することはいたしません。</p>
+    </div>
+    <main>
+        <div class="to">
+            <div class="top">
+                <form action="reserve2.html" method="post">
+                    <table class="tab">
+                        <tr>
+                            <th>BBQ満喫コース</th>
+                            <td><input type="radio" name="course" value="BBQ満喫コース"></td>
+                            <th>珈琲満喫コース</th>
+                            <td><input type="radio" name="course" value="珈琲満喫コース"></td>
+                        </tr>
+                        <tr>
+                            <th height="40" width="200">姓</th>
+                            <td><input type="text" class="ttd" size="25" value=""></td>
+                            <th height="40" width="200">名</th>
+                            <td><input type="text" class="td" size="25" value=""></td>
+                        </tr>
+                        <tr>
+                            <th height="40" width="200">電話番号</th>
+                            <td><input type="tel" class="td1" value=""></td>
+                        </tr>
+                        <tr>
+                            <th height="40" width="200">メールアドレス</th>
+                            <td><input type="email" class="td2" size="30" value=""></td>
+                        </tr>
+                        <tr>
+                            <th height="40" width="200">予約人数</th>
+                            <td><input type="text" value=""></td>
+                        </tr>
+                        <tr>
+                            <th height="40" width="200">予約日時</th>
+                            <td><input type="date" value=""></td>
+                            <th height="40" width="200">予約時間</th>
+                            <td><input type="time" class="td3" value="" step="1800" min="10:00" max="18:00"></td>
+                        </tr>
+                        <tr>
+                            <th height="40" width="200">ご希望内容</th>
+                            <td><textarea name="" id="" cols="30" rows="5"></textarea></td>
+                        </tr>
+                        <tr>
+                            <td colspan="5" align="center" height="40"><input type="submit" class="sub" value="確認"></td>
+                        </tr>
+                    </table>
+                </form>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="foot">
+            <div class="footWrap menu">
+                <h3>Menu</h3>
+                <ul>
+                    <li><a href="menu04.html">コースメニュー</a></li>
+                    <li><a href="menu.html">人気のメニュー</a></li>
+                    <li><a href="menu02.html">フードメニュー</a></li>
+                    <li><a href="menu03.html">ドリンクメニュー</a></li>
+                </ul>
+            </div>
+            <div class="footWrap access">
+                <h3>Access</h3>
+                <ul>
+                    <li><a href="access.html#bas">住所</a></li>
+                    <li><a href="access.html#bass">営業時間</a></li>
+                    <li><a href="access.htmlbasss">定休日</a></li>
+                    <li><a href="access.html#bassss">大阪駅からの時間</a></li>
+                </ul>
+            </div>
+            <div class="footWrap reserve">
+                <h3>Reserve</h3>
+                <ul>
+                    <li><a href="menu04.html#nap">BBQ満喫コース</a></li>
+                    <li><a href="menu04.html#napp">珈琲満喫コース</a></li>
+                </ul>
+            </div>
+        </div>
+        <a href="temp.html" class="logoo"><img src="images/logo.png" alt="logo" width="200px"></a>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/temp.css" />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>Woodist</title>
+  </head>
+  <body>
+    <header>
+      <div class="box">
+        <ul class="base">
+          <li><a href="temp.html"><img src="images/logo.png" width="100px"></a></li>
+          <li>
+            <a href="">Menu</a>
+            <ul class="indent">
+              <li><a href="menu.html">Favorite Menu</a></li>
+              <li><a href="menu02.html">Food Menu</a></li>
+              <li><a href="menu03.html">Drink Menu</a></li>
+              <li><a href="menu04.html">Course Menu</a></li>
+            </ul>
+          </li>
+          <li><a href="access.html">Access</a></li>
+          <li><a href="reserve.html">Reserve</a></li>
+        </ul>
+      </div>
+    </header>
+    <h2 class="mainImg"><img src="images/mainbijyual.jpg" alt="BBQ" /></h2>
+    <main>
+      <div class="maintop">
+        <div class="mainspace">
+          <div class="maintopp">
+            <p class="maintext">
+              <span>普段できないこと。</span><br />
+              <span>非現実</span>
+              をあなたに。<br/>
+              ゆったりとした時間を。<br/>
+              そんな空間をあなたにお届けします。
+            </p>
+          </div>
+          <div class="mainphot">
+            <p><img src="images/cafe.jpeg" alt="店内写真" /></p>
+            <p><img src="images/BBQfamily.png" alt="家族写真" /></p>
+          </div>
+        </div>
+      </div>
+      <div class="mainttop">
+        <div class="mainspace">
+          <div class="mainphots">
+            <p><img src="images/coffe.jpeg" alt="珈琲コース"></p>
+            <p><img src="images/everyday.jpeg" alt="BBQコース"></p>
+          </div>
+          <div class="maintoppp">
+            <h2>BBQ堪能コース！　珈琲堪能コース！</h2>
+            <p class="maintext">
+              家族でたくさん思い出も作れる！<br />
+              子供たちも自然に触れさせよう！<br />
+              子供が遊んでいる時間のうちにリラックスしてしよう！
+            </p>
+            <a href="reserve.html" class="btn">予約はこちら</a>
+          </div>
+        </div>
+      </div>
+      <div class="maintttop">
+        <div class="mainspace">
+          <div class="maintopppp">
+            <h2>コースだけでなく店内のカフェメニューも充実！</h2>
+            <p class="maintext">
+              ちょっとした軽食や、季節ごとに変わるアイスクリーム。<br/>
+              お子様のジュースも用意しています！
+            </p>
+          </div>
+          <div class="mainphotss">
+            <p><img src="images/ice creme.jpg" alt="アイス"></p>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div class="foot">
+        <div class="footWrap menu">
+          <h3>Menu</h3>
+          <ul>
+            <li><a href="menu04.html">コースメニュー</a></li>
+            <li><a href="menu.html">人気のメニュー</a></li>
+            <li><a href="menu02.html">フードメニュー</a></li>
+            <li><a href="menu03.html">ドリンクメニュー</a></li>
+          </ul>
+        </div>
+        <div class="footWrap access">
+          <h3>Access</h3>
+          <ul>
+            <li><a href="access.html#bas">住所</a></li>
+            <li><a href="access.html#bass">営業時間</a></li>
+            <li><a href="access.html#basss">定休日</a></li>
+            <li><a href="access.html#bassss">大阪駅からの時間</a></li>
+          </ul>
+        </div>
+        <div class="footWrap reserve">
+          <h3>Reserve</h3>
+          <ul>
+            <li><a href="menu04.html#nap">BBQ満喫コース</a></li>
+            <li><a href="menu04.html#napp">珈琲満喫コース</a></li>
+          </ul>
+        </div>
+      </div>
+          <a href="temp.html" class="logoo"><img src="images/logo.png" alt="logo" width="200px"></a>
+    </footer>
+    <script src="js/jquery-3.6.1.min.js"></script>
+    <script type="text/javascript">
+              function fadeAnime() { 
+            $('.mainspace').each(function () { 
+                var elemPos = $(this).offset().top; 
+                var scroll = $(window).scrollTop();
+                var windowHeight = $(window).height();
+                if (scroll >= elemPos - windowHeight) {
+                    $(this).addClass('sample');
+                } 
+                else {
+                    $(this).removeClass('sample');
+                }
+            });
+        }
+        $(window).scroll(function () {
+            fadeAnime(); 
+        }); 
+    </script>
+  </body>
+</html>

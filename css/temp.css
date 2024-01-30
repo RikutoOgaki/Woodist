@@ -1,0 +1,222 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  background-color: #eedcb3;
+}
+
+ul {
+  list-style: none;
+  z-index:999;
+}
+header {
+  width: 100%;
+  background-color: white;
+  height: 60px;
+}
+.box {
+  text-align: center;
+  margin: 0 auto;
+}
+.head > ul {
+  list-style: none;
+}
+.base{
+  width: 100%;
+  display: flex;
+  position: fixed;
+}
+.base > li {
+  background-color: white;
+  width: 25%;
+  height: 60px;
+  float: left;
+  text-align: center;
+  border-right: 1px solid rgb(31, 30, 30);
+}
+.base > li > a:hover {
+  background-color: rgb(186, 186, 186);
+}
+.base > li .indent {
+  display: none;
+}
+.base > li:hover .indent {
+  display: block;
+  width: 25%;
+}
+.indent {
+  position: absolute;
+  top: 60px;
+}
+.indent > li {
+  background-color: white;
+  height: 60px;
+  list-style: none;
+}
+.indent > li:hover {
+  background-color: rgb(186, 186, 186);
+}
+a {
+  font-size: 25px;
+  text-align: center;
+  color: black;
+  line-height: 2.5;
+  text-decoration: none;
+  display: block;
+}
+
+.mainImg {
+  padding-top: 60px;
+  width: 100%;
+}
+.mainImg img{
+  width: 100%;
+}
+
+main {
+  width: 100%;
+  height: 1500px;
+  padding-top: 200px;
+  padding-bottom: 1000px;
+  margin: 0 auto;
+}
+.maintop {
+  background-color: white;
+  height: 600px;
+  width: 100%;
+}
+.mainspace{
+  text-align: center;
+  margin: 0 auto;
+  width: 1000px;
+}
+.maintopp {
+  width: 440px;
+  padding-top: 80px;
+  line-height: 100px;
+  float: left;
+}
+.maintext {
+  font-size: 1.6em;
+}
+.mainphot{
+  width: 500px;
+  padding-top: 20px;
+  float: left;
+}
+.mainttop {
+  background-color: white;
+  height: 600px;
+  margin-top: 200px;
+  width: 100%;
+}
+.mainphots{
+  width: 500px;
+  float: left;
+  padding-top: 20px;
+}
+.maintoppp {
+  padding-top: 80px;
+  line-height: 90px;
+  float: left;
+}
+.maintttop {
+  background-color: white;
+  height: 600px;
+  margin-top: 200px;
+}
+.maintopppp {
+  padding-top: 140px;
+  line-height: 90px;
+  width: 550px;
+  float: left;
+}
+.mainphotss{
+  float: left;
+  margin-top: 150px;
+  width: 450px;
+}
+.btn {
+  width: 200px;
+  height: 40px;
+  background-color: #246547;
+  color: white;
+  font-size: 1.6em;
+  margin-top: 40px;
+  margin-left: 100px;
+}
+span {
+  font-size: 1.6em;
+}
+h2 {
+  font-size: 2.4em;
+}
+.btn:hover {
+  background-color: #438365;
+}
+footer {
+  width: 100%;
+  height: 500px;
+  background-color: #fff;
+}
+.foot {
+  background-color: white;
+  width: 1000px;
+  height: 400px;
+  margin: 0 auto;
+  text-align: center;
+  display: flex;
+}
+.footWrap {
+  width: 310px;
+  padding-top: 40px;
+}
+.footWrap h3 {
+  text-align: left;
+  margin-left: 90px;
+  font-size: 2em;
+  font-weight: bold;
+}
+.footWrap ul {
+  list-style-type: disc;
+  border-right: dotted 1px #dedede;
+  margin-top: 20px;
+}
+.reserve ul {
+  border: none;
+}
+.footWrap ul li {
+  text-align: left;
+  margin-left: 120px;
+}
+.footWrap a {
+  display: inline;
+  font-size: 1.6em;
+}
+.sample {
+  animation-name: fadeUpAnime;
+  animation-delay: .1s;
+  animation-duration: .6s;
+  animation-fill-mode: forwards;
+  opacity: 0
+}
+
+@keyframes fadeUpAnime {
+  from {
+      opacity: 0;
+      transform: translateX(-100px)
+  }
+
+  to {
+      opacity: 1;
+      transform: translateY(0)
+  }
+}
+
+.mainspace {
+  opacity: 0
+}
